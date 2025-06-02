@@ -1,0 +1,142 @@
+﻿<div id='ContentPanelContainer_ph' class='content'>
+    <section class='contact_section overlay' style="background: url('../img/bg/bg_contact.jpg') no-repeat top center; background-size: cover">
+        <div class='container'>
+            <ul class='breadcrumbs'>
+                <li><a href='/'>Главная</a></li>
+                <li>Контакты</li>
+            </ul>
+            <div class='contact_flex_content'>
+                <div class='contact_item'>
+                    <h2>Контакты</h2>
+                    <ul>
+                        <li data-aos='fade-up' data-aos-delay='200'>
+                            <p>Звоните:</p>
+                            <a href='tel:+74997559559' class='tel_link'>
+                                <span><i class='zmdi zmdi-phone'></i></span>
+                                +7 (499)
+                                <strong>755-95-59</strong>
+                            </a>
+                        </li>
+                        <li data-aos='fade-up' data-aos-delay='400'>
+                            <p>Пишите:</p>
+                            <a href='mailto:info@oot.su'>
+                                <span><i class='zmdi zmdi-email'></i></span>
+                                info@oot.su
+                            </a>
+                        </li>
+                        <li data-aos='fade-up' data-aos-delay='600'>
+                            <p>Наш адрес:</p>
+                            <a href='https://goo.gl/maps/k6x7qMg7BhE2' target='_blank'>
+                                <span><i class='zmdi zmdi-pin'></i></span>
+                                г. Москва, шоссе Энтузиастов, д. 56, стр. 32, офис 447
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='form_contact' data-aos='fade-up' data-aos-delay='200'>
+                    <div class='title_form'>
+                        <h3>Есть вопросы?</h3>
+                        <p>Заполните, пожалуйста, форму, и мы вам вишлем ответ письмом</p>
+                    </div>
+                    <form method='POST'>
+                        <input type='hidden' name='project_name' value='OOT' />
+                        <input type='hidden' name='form_subject' value='Вопрос' />
+                        <div class='form_group'>
+                            <input type='text' class='form_input' name='Имя' required='' placeholder='Имя Фамилия' />
+                            <i class='zmdi zmdi-account'></i>
+                            <span>Введите Имя и Фамилию</span>
+                        </div>
+                        <div class='form_group'>
+                            <input type='email' class='form_input' name='E-mail' required='' placeholder='E-mail' />
+                            <i class='zmdi zmdi-email'></i>
+                            <span>Введите Email</span>
+                        </div>
+                        <div class='form_group'>
+                            <textarea class='form_input' placeholder='Задайте вопрос' name='вопрос' required=''></textarea>
+                            <i class='zmdi zmdi-help'></i>
+                            <span>Введите текст вопроса</span>
+                        </div>
+                        <button class='btn_st btn_st_form'>отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- modal  dev_course-->
+    <div class='modal modal_demo_course' id='dev_course'>
+        <div class='modal_content'>
+            <div class='title_modal'>
+                <h3>Разработать курс</h3>
+                <p>Заполните, пожалуйста форму</p>
+            </div>
+            <form method='POST'>
+                <input type='hidden' name='project_name' value='OOT' />
+                <input type='hidden' name='form_subject' value='уникальный курс' />
+                <div class='form_group'>
+                    <input type='text' class='form_input' name='Компания' required='' placeholder='Компания' />
+                    <i class='zmdi zmdi-info'></i>
+                    <span>Введите название Компании</span>
+                </div>
+                <div class='form_group'>
+                    <input type='text' class='form_input' name='Имя' required='' placeholder='Имя Фамилия' />
+                    <i class='zmdi zmdi-account'></i>
+                    <span>Введите Имя и Фамилию</span>
+                </div>
+                <div class='form_group'>
+                    <input type='email' class='form_input' name='E-mail' required='' placeholder='E-mail' />
+                    <i class='zmdi zmdi-email'></i>
+                    <span>Введите Email</span>
+                </div>
+                <div class='form_group'>
+                    <input type='tel' class='form_input' name='Телефон' required='' placeholder='Телефон' />
+                    <i class='zmdi zmdi-phone'></i>
+                    <span>Введите телефон</span>
+                </div>
+                <div class='form_group'>
+                    <textarea class='form_input' placeholder='Комментарий' name='Комментарий'></textarea>
+                    <i class='zmdi zmdi-help'></i>
+                </div>
+                <button class='btn_st btn_st_form'>отправить</button>
+            </form>
+        </div>
+    </div>
+    <!-- modal  demo-course-->
+    <div class='modal modal_demo_course' id='demo_course'>
+        <div class='modal_content'>
+            <div class='title_modal'>
+                <h3>Запрос демо-курса</h3>
+                <p>
+                    Заполните, пожалуйста, форму, и мы вам вышлем
+                    <br />
+                    демо-курс обратным письмом
+                </p>
+            </div>
+            <form method='POST'>
+                <input type='hidden' name='project_name' value='OOT' />
+                <input type='hidden' name='form_subject' value='демо-курс' />
+                <input type='hidden' name='Демо курс' class='demo_input' value='' />
+                <div class='form_group'>
+                    <input type='text' class='form_input' name='Компания' required='' placeholder='Компания' />
+                    <i class='zmdi zmdi-info'></i>
+                    <span>Введите название Компании</span>
+                </div>
+                <div class='form_group'>
+                    <input type='text' class='form_input' name='Имя' required='' placeholder='Имя Фамилия' />
+                    <i class='zmdi zmdi-account'></i>
+                    <span>Введите Имя и Фамилию</span>
+                </div>
+                <div class='form_group'>
+                    <input type='email' class='form_input' name='E-mail' required='' placeholder='E-mail' />
+                    <i class='zmdi zmdi-email'></i>
+                    <span>Введите Email</span>
+                </div>
+                <div class='form_group'>
+                    <input type='tel' class='form_input' name='Телефон' required='' placeholder='Телефон' />
+                    <i class='zmdi zmdi-phone'></i>
+                    <span>Введите телефон</span>
+                </div>
+                <button class='btn_st btn_st_form'>отправить</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿<section class='container'>
+    <div class='modal_content'>
+        <div class='title_modal'>
+            <h3>Запрос демо-курса</h3>
+            <p>
+                Заполните, пожалуйста, форму авторизации.
+
+            </p>
+        </div>
+        <form method='POST' novalidate='novalidate'>
+            <input type='hidden' name='form_subject' value='Демо-курс с главной страницы' />
+            <input type='hidden' name='Демо курс' class='demo_input' value='«EnglishMag 1Q/2020 Issue — Online version»' />
+
+            <div class='form_group'>
+                <input type='text' class='form_input' name='Имя' required='' placeholder='Логин' aria-required='true' />
+                <i class='zmdi zmdi-account'></i>
+                <span>Введите Логин</span>
+            </div>
+            <div class='form_group'>
+                <input type='email' class='form_input' name='E-mail' required='' placeholder='E-mail' aria-required='true' />
+                <i class='zmdi zmdi-email'></i>
+                <span>Введите Email</span>
+            </div>
+
+            <div class='form_group'>
+                <input type='password' class='form_input' name='Пароль' required='' placeholder='Пароль' aria-required='false' />
+                <i class='zmdi zmdi-info'></i>
+                <span>Введите пароль</span>
+            </div>
+            <button class='btn_st btn_st_form'>Войти</button>
+        </form>
+    </div>
+</section>

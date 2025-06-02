@@ -1,0 +1,65 @@
+<header>
+    <div class='container'>
+        <div class='header_content'>
+            <div class='logo'>
+                <a href='/'>
+                    <img src='./img/logo.svg' alt='' />
+                </a>
+            </div>
+            <nav class='navigation open'>
+                <span class='close_nav'></span>
+
+                <ul>
+                    {{#if isBlog}}
+                        <li><a class='active' href='/blog'>Наш Блог</a></li>
+                    {{else}}
+                        <li><a href='/blog'>Наш Блог</a></li>
+                    {{/if}}
+
+                    {{#if isCourses}}
+                        <li><a class='active' href='/courses'>Наши Курсы</a></li>
+                    {{else}}
+                        <li><a href='/courses'>Наши Курсы</a></li>
+                    {{/if}}
+
+                    {{#if isMagazines}}
+                        <li><a class='active' href='/magazines'>Наши Журналы</a></li>
+                    {{else}}
+                        <li><a href='/magazines'>Наши Журналы</a></li>
+                    {{/if}}
+
+                    {{#if isContacts}}
+                        <li><a class='active' href='/contacts'>Контакты</a></li>
+                    {{else}}
+                        <li><a href='/contacts'>Контакты</a></li>
+                    {{/if}}
+
+                    {{!-- {{#if isAuthorized}} --}}
+                    <select class='logIn_menu' id='logInMenu'>
+                        <option>--Выберете категорию:--</option>
+                        <option value='/'>Панель редактирвания</option>
+                        <option value='/logout'>Выйти</option>
+                    </select>
+                    {{!-- {{else}}
+                        {{#if isLogIn}}
+                            <li><a class='active' href='/logIn'>Войти</a></li>
+                        {{else}}
+                            <li><a href='/logIn'>Войти</a></li>
+                        {{/if}}
+                    {{/if}} --}}
+
+                </ul>
+            </nav>
+            <div class='header_content_flex'>
+                <button class='tog_nav'></button>
+                <div class='contact_header'>
+                    <a href='tel:+79500000000' class='tel_link'>
+                        <span><i class='zmdi zmdi-phone'></i></span>
+                        <strong>+7 (950) 000-00-00</strong>
+                    </a>
+                    <a href='#callback' class='callback' data-fancybox=''>Заказать обрaтный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
