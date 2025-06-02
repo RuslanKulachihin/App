@@ -34,19 +34,19 @@
                         <li><a href='/contacts'>Контакты</a></li>
                     {{/if}}
 
-                    {{!-- {{#if isAuthorized}} --}}
-                    <select class='logIn_menu' id='logInMenu'>
-                        <option>--Выберете категорию:--</option>
-                        <option value='/'>Панель редактирвания</option>
-                        <option value='/logout'>Выйти</option>
-                    </select>
-                    {{!-- {{else}}
+                    {{#if isAuthorized}}
+                        <select class='logIn_menu' id='logInMenu'>
+                            <option>--Выберете категорию:--</option>
+                            <option value='/'>Панель редактирвания</option>
+                            <option value='/logout'>Выйти</option>
+                        </select>
+                    {{else}}
                         {{#if isLogIn}}
                             <li><a class='active' href='/logIn'>Войти</a></li>
                         {{else}}
                             <li><a href='/logIn'>Войти</a></li>
                         {{/if}}
-                    {{/if}} --}}
+                    {{/if}}
 
                 </ul>
             </nav>
